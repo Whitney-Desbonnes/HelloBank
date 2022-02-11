@@ -1,0 +1,133 @@
+@import './fonts';
+@import './colors';
+
+// global reset
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// style pre config
+body {
+    font-family: 'HelloType', sans-serif;
+    text-align: center;
+    color: $gris;
+}
+
+img { 
+    width: 100%;
+}
+
+hr {
+    background-color: $bleuFonce;
+    width: 10%;
+    margin: 30px auto;
+    height: 7px;
+    border: none;
+    border-radius: 20px;
+}
+
+a {
+    font-family: 'HelloType-Bold', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+}
+
+// header style
+header {
+    position: relative;
+    .header__logo {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 30%;
+        margin: 30px auto;
+    }
+
+    .header__bgd-desk {
+        display: none;
+    }
+
+    .header__content {
+        padding: 20px;
+
+        .header__title {
+            margin-bottom: 20px;
+            .text-color {
+                color: $bleu;
+            }
+            .header__text-decor {
+                display: none;
+            }
+        }
+        .header__mark {
+            font-family: 'HelloType-Bold', sans-serif;
+        }
+
+        .mark-first {
+            font-size: 1.5rem;
+        }
+
+        p {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        .header__button{
+            display: inline-block;
+            background-color: $bleu;
+            padding: 20px;
+            margin: 30px;
+            border-radius: 50px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+    }
+}
+
+// swipper style
+.swiper__title {
+    font-size: 1.4rem;
+    padding: 20px 70px;
+}
+.swiper {
+    font-family: 'HelloType-Bold', sans-serif;
+    width: 100%;
+    margin-bottom: 50px;
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        .swiper-slide--img {
+            img {
+                height: 80px;
+            }
+        }
+
+        p {
+            width: 70%;
+            margin: 20px auto;
+        }
+
+
+    }
+    .swiper-pagination-bullets {
+        .swiper-pagination-bullet-active {
+            background: $grisFonce;
+        }
+    }
+}
+@import './mediaqueries';

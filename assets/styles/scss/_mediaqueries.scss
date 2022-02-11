@@ -1,0 +1,167 @@
+@media only screen and (min-width: 768px) {
+    // style pre config
+    body {
+        font-size: 0.9rem;
+    }
+
+    // header style
+    header {
+        hr {
+            margin: 10px auto;
+            background-color: #fff;
+        }
+        .header__bgd-mob {
+            display: none;
+        }
+        .header__bgd-desk {
+            display: block;
+        }
+
+        .header__logo {
+            top: 0;
+            left: 0;
+            width: 40%;
+            margin: 20px 0 0 20px;
+            img {
+                width: 80px;
+            }
+        }
+
+        .header__content {
+            position: absolute;
+            left: 0;
+            bottom: -25px;
+            width: 40%;
+            padding: 0;
+            margin: 0 0 0 20px;
+            color: #fff;
+            .header__title {
+                margin: 0 auto;
+                font-size: 1.3rem;
+                width: 196px;
+                position: relative;
+                color: $gris;
+                .text-color {
+                    color: $beige;
+                }
+                .header__text-decor {
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                    transform: translate(-70%, -50%);
+                    width: 40px;
+                }
+            }
+            .mark-first {
+                font-size: 1.3rem;
+            }
+    
+            p {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+    
+            .header__button{
+                padding: 20px;
+                border-radius: 50px;
+                margin: 0;
+                box-shadow: -5px 5px 15px rgba(88, 88, 88, 0.555);
+                font-size: 0.8rem;
+                &:hover {
+                    background-color: $bleuFonce;
+                }
+            }
+        }
+
+    }
+
+
+    // swipper style
+    .swiper {
+        padding: 50px;
+        .swiper-wrapper {
+            margin-top: 40px;
+        }
+        .swiper-slide-off {
+            padding: 0 20px;
+            &:first-child {
+                border-right: 1px solid $grisFonce;
+            }
+            &:last-child {
+                border-left: 1px solid $grisFonce;
+            }
+            .swiper-slide--img {
+                img {
+                    height: 80px;
+                    width: auto;
+                }
+            }
+            p {
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+
+
+
+@media only screen and (min-width: 992px) {
+        // style pre config
+        body {
+            font-size: 1rem;
+        }
+        // header style
+        header {
+            hr {
+                margin: 30px auto;
+            }    
+            .header__content {
+                width: 40%;
+                .header__title {
+                    font-size: 1.5rem;
+                    width: 196px;
+                    .header__text-decor {
+                        transform: translate(-75%, -40%);
+                    }
+                }
+                .mark-first {
+                    font-size: 1.5rem;
+                }
+
+                .header__button {
+                    margin-top: 25px;
+                }
+            }
+    
+        }
+
+}
+
+@media only screen and (min-width: 1200px) {
+            // header style
+            header {
+                .header__logo {
+                    img {
+                        width: 150px;
+                    }
+                }
+                .header__content {
+                    font-size: 1.3rem;
+                    .header__title {
+                        font-size: 1.8rem;
+                        width: 300px;
+                        .header__text-decor {
+                            transform: translate(-40%, -40%);
+                        }
+                    }
+                    .mark-first {
+                        font-size: 1.8rem;
+                    }
+                    .header__button{
+                        width: 50%;
+                    }
+                }
+        
+            }
+}
