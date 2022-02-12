@@ -240,6 +240,9 @@ header .header__content .header__button {
   }
   .swiper {
     padding: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .swiper .swiper-wrapper {
     margin-top: 40px;
