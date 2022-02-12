@@ -124,6 +124,10 @@ header {
 
 
     }
+
+    .swiper-pagination {
+        display: block;
+    }
     .swiper-pagination-bullets {
         .swiper-pagination-bullet-active {
             background: $grisFonce;

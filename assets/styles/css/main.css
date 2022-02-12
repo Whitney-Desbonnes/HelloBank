@@ -166,6 +166,10 @@ header .header__content .header__button {
   margin: 20px auto;
 }
 
+.swiper .swiper-pagination {
+  display: block;
+}
+
 .swiper .swiper-pagination-bullets .swiper-pagination-bullet-active {
   background: #21272a;
 }
@@ -239,13 +243,14 @@ header .header__content .header__button {
     background-color: #196c8c;
   }
   .swiper {
+    width: 70%;
     padding: 50px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .swiper .swiper-wrapper {
     margin-top: 40px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .swiper .swiper-slide-off {
     padding: 0 20px;
@@ -262,6 +267,9 @@ header .header__content .header__button {
   }
   .swiper .swiper-slide-off p {
     margin-top: 30px;
+  }
+  .swiper .swiper-pagination {
+    display: none;
   }
 }
 

@@ -78,10 +78,11 @@
 
     // swipper style
     .swiper {
+        width: 70%;
         padding: 50px;
-        justify-content: center;
         .swiper-wrapper {
             margin-top: 40px;
+            justify-content: center;
         }
         .swiper-slide-off {
             padding: 0 20px;
@@ -100,6 +101,10 @@
             p {
                 margin-top: 30px;
             }
+        }
+
+        .swiper-pagination {
+            display: none;
         }
     }
 }
